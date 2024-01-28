@@ -1,0 +1,5 @@
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe Boosting Game Game is played for \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q rounds, round \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q plays out as follows: Booster creates some cost matrix \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q Weak-Learner returns weak classifier \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q with \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q such that the cost is somewhat 'small' Based on the cost, Booster computes some weight \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q for this round\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qenumerate item \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QExplaining Adaboost\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QEmpirical Inference: Festschrift in Honor of Vladimir N. Vapnik\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QMany real world datasets are not Boostable in our sense :( But AdaBoost.MM still converges on not Boostable Datasets!\\E$"}

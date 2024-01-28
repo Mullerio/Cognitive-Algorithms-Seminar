@@ -1,0 +1,21 @@
+\frametitle{AdaBoost}
+    \small
+    \begin{algorithm}[H]
+        \captionsetup{labelformat=empty}
+        \KwData{Training set $S = \{(x_1, y_1), (x_2, y_2), \ldots, (x_m, y_m)\}$, where $x_i$ is a feature vector and $y_i \in \{-1,1\}$ is a label.}
+        \KwResult{Classifier $H$.}
+        Initialize distribution $D_1(i) = \frac{1}{m}$ for $i = 1, 2, \ldots, m$ \\
+        \For{$t=1$ \KwTo $T$}{
+            Train weak learner $h_t(x)$ using distribution $D_t$ \\
+            Compute error: $\varepsilon_t = \sum_{i=1}^m D_t(i) \cdot \mathds{1}[h_t(x_i) \neq y_i]$ \\
+            Compute classifier weight: $\alpha_t = \frac{1}{2} \ln\left(\frac{1 - \varepsilon_t}{\varepsilon_t}\right)$ \\
+            Update distribution: $D_{t+1}(i) = D_t(i) \cdot \exp(-\alpha_t \cdot y_i \cdot h_t(x_i))$ for $i \in [m]$ \\
+            Normalize $D_{t+1}$ \\
+        }
+        Final strong classifier: $H(x) = \text{sign}(f(x))$ with $f(x) = \left(\sum_{t=1}^T \alpha_t \cdot h_t(x)\right)$
+        \caption{AdaBoost in \cite{schapire2013explaining}}
+    \end{algorithm}
+    \begin{itemize}
+        \item There exist different Multiclass extensions of this.
+        \item We minimize the convex loss function $L(x,y) = e^{-yf(x)}$.
+    \end{itemize}

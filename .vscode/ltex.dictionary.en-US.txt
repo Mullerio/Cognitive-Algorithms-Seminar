@@ -1,2 +1,9 @@
 Boadilla
 Multiclass
+XGBoost
+LightGBM
+AdaBoost
+Schapire
+boostable
+Boostable
+MNIST
